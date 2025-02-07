@@ -279,6 +279,74 @@
             }
         }
     </style>
+    <style>
+        /* Enhanced Product Styles */
+        .products-section {
+            padding: 5rem 2rem;
+            background: #f9f9f9;
+        }
+        
+        .product-card.detailed {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card.detailed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-specs {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .product-specs h4 {
+            color: var(--primary);
+            margin: 1rem 0 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .product-specs ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .product-specs ul li {
+            padding: 0.3rem 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+        
+        .product-specs ul li:before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .specs-btn {
+            margin-top: 1.5rem;
+            width: 100%;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .product-specs ul li {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+        
 </head>
 <body>
     <!-- Navigation -->
@@ -305,43 +373,125 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products">
-        <div class="section-title" data-aos="fade-up">
-            <h2>Our Products</h2>
-            <p>Discover our range of premium leather products</p>
-        </div>
-        <div class="section-content">
-            <div class="products-grid">
-                <div class="product-card" data-aos="fade-up">
-                    <div class="product-image">
-                        <img src="./images/types-of-leather.jpg" alt="Finished Leather" width="390px" height="220px" />
-                    </div>
-                    <div class="product-info">
-                        <h3>Finished Leather</h3>
-                        <p>Premium quality finished leather for various applications</p>
-                    </div>
+    <!-- Enhanced Products Section -->
+<section id="products" class="products-section">
+    <div class="section-title" data-aos="fade-up">
+        <h2>Our Products</h2>
+        <p>Premium Leather Solutions for Every Industry</p>
+    </div>
+    
+    <div class="section-content">
+        <div class="products-grid">
+            <!-- Finished Leather Product Card -->
+            <div class="product-card detailed" data-aos="fade-up">
+                <div class="product-image">
+                    <img src="./images/types-of-leather.jpg" alt="Premium finished leather showcasing texture and quality" width="390" height="220">
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="product-image">
-                        <img src="./images/wet-blue.jpg" alt="Raw Materials" width="390px" height="220px" />
+                <div class="product-info">
+                    <h3>Finished Leather</h3>
+                    <div class="product-specs">
+                        <h4>Specifications:</h4>
+                        <ul>
+                            <li>Thickness Range: 0.8mm - 2.4mm</li>
+                            <li>Available Colors: 50+ standard colors</li>
+                            <li>Finishes: Aniline, Semi-aniline, Pigmented</li>
+                            <li>Grain Types: Full grain, Top grain, Corrected grain</li>
+                        </ul>
+                        
+                        <h4>Applications:</h4>
+                        <ul>
+                            <li>Luxury Footwear</li>
+                            <li>Premium Accessories</li>
+                            <li>Automotive Upholstery</li>
+                            <li>Fashion Garments</li>
+                        </ul>
+                        
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Superior Color Consistency</li>
+                            <li>Excellent Wear Resistance</li>
+                            <li>Color Fastness to Light: 4-5 on Blue Scale</li>
+                            <li>Water Resistance: 3+ hours</li>
+                        </ul>
                     </div>
-                    <div class="product-info">
-                        <h3>Wet Blue</h3>
-                        <p>High-grade raw materials for leather processing</p>
-                    </div>
+                    <button class="btn-primary specs-btn">Request Specifications</button>
                 </div>
-                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="product-image">
-                        <img src="./images/exotica.jpg" alt="Custom Solutions" width="390px" height="220px"/>
+            </div>
+
+            <!-- Wet Blue Product Card -->
+            <div class="product-card detailed" data-aos="fade-up" data-aos-delay="100">
+                <div class="product-image">
+                    <img src="./images/wet-blue.jpg" alt="High-grade wet blue leather material" width="390" height="220">
+                </div>
+                <div class="product-info">
+                    <h3>Wet Blue</h3>
+                    <div class="product-specs">
+                        <h4>Specifications:</h4>
+                        <ul>
+                            <li>Chrome Content: 2.5% - 3.0%</li>
+                            <li>pH Value: 3.5 - 4.0</li>
+                            <li>Substance: 0.9mm - 2.2mm</li>
+                            <li>Shrinkage Temperature: >100°C</li>
+                        </ul>
+                        
+                        <h4>Quality Parameters:</h4>
+                        <ul>
+                            <li>Selection Grades: A/B/C</li>
+                            <li>Moisture Content: 45-55%</li>
+                            <li>Salt-free Weight Basis</li>
+                            <li>Zero Growth Defects</li>
+                        </ul>
+                        
+                        <h4>Processing Capabilities:</h4>
+                        <ul>
+                            <li>Suitable for All Types of Finishing</li>
+                            <li>Excellent Dyeing Properties</li>
+                            <li>Superior Grain Tightness</li>
+                            <li>Consistent Thickness</li>
+                        </ul>
                     </div>
-                    <div class="product-info">
-                        <h3>Custom Solutions</h3>
-                        <p>Tailored leather solutions for your specific needs</p>
+                    <button class="btn-primary specs-btn">Request Specifications</button>
+                </div>
+            </div>
+
+            <!-- Custom Solutions Product Card -->
+            <div class="product-card detailed" data-aos="fade-up" data-aos-delay="200">
+                <div class="product-image">
+                    <img src="./images/exotica.jpg" alt="Custom leather solutions and specialty products" width="390" height="220">
+                </div>
+                <div class="product-info">
+                    <h3>Custom Solutions</h3>
+                    <div class="product-specs">
+                        <h4>Customization Options:</h4>
+                        <ul>
+                            <li>Bespoke Color Development</li>
+                            <li>Custom Embossing Patterns</li>
+                            <li>Special Finish Development</li>
+                            <li>Technical Specifications Matching</li>
+                        </ul>
+                        
+                        <h4>Industry Solutions:</h4>
+                        <ul>
+                            <li>Automotive Industry Specifications</li>
+                            <li>Furniture Manufacturing Standards</li>
+                            <li>Fashion Industry Requirements</li>
+                            <li>Technical Leather Applications</li>
+                        </ul>
+                        
+                        <h4>Value-Added Services:</h4>
+                        <ul>
+                            <li>Technical Consultation</li>
+                            <li>Sample Development</li>
+                            <li>Quality Testing Reports</li>
+                            <li>Specification Documentation</li>
+                        </ul>
                     </div>
+                    <button class="btn-primary specs-btn">Request Custom Solution</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Features Section -->
     <section class="features" id="about">
@@ -466,6 +616,17 @@
             "addressCountry": "India"
           }
         }
+        </script>
+    <script>
+        // Add click handler for specification request buttons
+        document.querySelectorAll('.specs-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const productType = this.closest('.product-card').querySelector('h3').textContent;
+                document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+                const messageField = document.querySelector('#message');
+                messageField.value = `I would like to request detailed specifications for your ${productType} product.`;
+            });
+        });
         </script>
 </body>
 </html>
