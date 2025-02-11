@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagonal frame -->
+  <path d="M200 50 L300 100 L300 200 L200 250 L100 200 L100 100 Z" 
+        fill="none" stroke="#C7821C" stroke-width="4"/>
+  
+  <!-- Monogram -->
+  <path d="M160 120 v80 M160 160 h40 M240 120 v80" 
+        stroke="#C7821C" stroke-width="8" stroke-linecap="round"
+        fill="none"/>
+  
+  <!-- Q tail -->
+  <path d="M220 180 q20 20 30 30" 
+        stroke="#C7821C" stroke-width="8" stroke-linecap="round"
+        fill="none"/>
+</svg>
